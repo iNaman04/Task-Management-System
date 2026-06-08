@@ -16,30 +16,6 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) task management applicat
 - **Backend:** Node.js, Express.js, JWT, bcrypt
 - **Database:** MongoDB with Mongoose
 
-## Project Structure
-
-```
-Task-Management-System/
-├── backend/
-│   └── src/
-│       ├── config/       # Database connection
-│       ├── controllers/  # Route handlers
-│       ├── middleware/   # Auth middleware
-│       ├── models/       # User & Task schemas
-│       ├── routes/       # API routes
-│       └── index.js      # Server entry point
-└── frontend/
-    └── src/
-        ├── components/   # Reusable UI components
-        ├── context/      # Auth context
-        ├── pages/        # Login, Register, Dashboard
-        └── services/     # API client
-```
-
-## Prerequisites
-
-- Node.js (v18+)
-- MongoDB (local or MongoDB Atlas)
 
 ## Setup Instructions
 
@@ -95,18 +71,3 @@ npm run dev
 ### 4. Open the App
 
 Visit `http://localhost:5173` in your browser.
-
-## API Endpoints
-
-| Method | Endpoint           | Description        | Auth Required |
-|--------|--------------------|--------------------|---------------|
-| POST   | `/api/auth/register` | Register user    | No            |
-| POST   | `/api/auth/login`    | Login user       | No            |
-| GET    | `/api/tasks`         | Get all tasks    | Yes           |
-| POST   | `/api/tasks`         | Create task      | Yes           |
-| PUT    | `/api/tasks/:id`     | Update task      | Yes           |
-| DELETE | `/api/tasks/:id`     | Delete task      | Yes           |
-
-## License
-
-ISC
